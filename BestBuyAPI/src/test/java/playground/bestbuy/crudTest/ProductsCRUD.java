@@ -37,7 +37,7 @@ public class ProductsCRUD {
 
         response = given().log().all()
                 .when()
-                .get("http://localhost:3030/products");
+                .get(EndPoints.GET_ALL_PRODUCTS);
         response.then().log().all()
                 .statusCode(200);
 
